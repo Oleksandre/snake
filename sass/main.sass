@@ -1,4 +1,5 @@
 @import normalize
+@import media-queries
 
 
 // All___sliders___style__________________________________
@@ -8,11 +9,11 @@
     width: 100%
     height: 756px
     position: relative
-    z-index: 0
+    // z-index: 0
 .sl_bg
     width: 1440px
     height: 756px 
-    background: #37cedc  //url(../img/bg_header.jpg) no-repeat
+    background: #37cedc 
     background-size: cover
 .sl_img
     width: 1440px
@@ -20,55 +21,39 @@
     img
         margin: 0 auto        
 .slick-prev
-    z-index: 100
-    left: 80px
-    width: 45px
-    position: absolute    
-    background: url(../img/slider_back.png) no-repeat
-.slick-next
-    z-index: 100
-    right: 80px
-    width: 65px
     position: absolute
-    background: url(../img/slider_next.png) no-repeat
+    z-index: 100
+    left: 16%
+    top: 45%;
+.slick-next
+    display: block
+    position: absolute
+    z-index: 100
+    right: 19%
+    top: 45%;
 .slick-prev:before
-    content: ''
+    content: url(../img/slider_back.png)
     font-family: ''
+    font-size: 50px
     z-index: 100
     position: absolute
 .slick-next:before
-    content: ''
+    content: url(../img/slider_next.png)
+    font-size: 50px
     font-family: ''
     z-index: 100
     position: absolute
-.content_header
-    position: absolute
-    z-index: 10
-    width: 100%
-    height: 756px
-// #next
-//     position: absolute
-//     right: 102px
-//     padding-top: 310px
-//     float: right
-//     background: url(../img/slider_next.png) no-repeat
-// #back
-//     position: absolute
-//     left: 80px
-//     padding-top: 310px
-//     float: left
-//     background: url(../img/slider_back.png) no-repeat
-
 
 // Slider_kontent_style____________________________   
 .block_slide
     width: 100%
-    height: 400px
+    text-align: center
     padding: 93px 0      
     background: #fff    
     color: #222    
 .block_info
-    margin-left: 5%
+    // max-width: 900px 
+    margin-left: 5.03%
     // display: flex
     // flex-direction: row
     // justify-content: center
@@ -83,7 +68,7 @@
        
     p
         padding-top: 15px            
-        font-family: regular 'Montserrat', sans-serif
+        font-weight: regular 
         font-size: 16px
         color: #595959
 .img_UI
@@ -94,13 +79,66 @@
     position: absolute
     margin-left: 140px
     z-index: 2 
+
+//Slider_block_slide_2___________________________
+.block_slide_2
+    width: 100%
+    padding: 93px 0 142px 0
+    text-align: center
+    background: #FF605F
+    p
+        font-size: 22px
+        color: #fff
+    h3
+        padding-top: 24px
+        font-family: 'Open Sans', sans-serif
+        font-size: 12px
+        color: #999999
+.slick-dots
+    top: 242px
+.slick-dots li
+    width: 13px
+    height: 13px
+    border-radius: 50%  
+.slick-dots li button
+    // margin-top: -50px
+    width: 13px
+    height: 13px
+    background-color: #FF807F
+    border-radius: 50%
+
+.slick-dots li button:before
+    width: 13px
+    height: 13px
+    border-radius: 50%
+    
+
+
+.slick-dots li.slick-active button
+    // margin-top: -50px
+    width: 13px
+    height: 13px    
+    background-color: #fff
+    border-radius: 50%
+
+.slick-dots li.slick-active button:before
+    // margin-top: -50px
+    width: 13px
+    height: 13px
+    background-color: #fff
+    border-radius: 50%
 // All___sliders___style_______________end_______________
 
-// eader______Style_____________________________________
+
+// Header______Style_____________________________________
+.content_header
+    position: absolute
+    z-index: 10
+    width: 100%
+    height: 756px
 .center
     width: 940px
-    margin: 0 auto    
-    font-family: bold 'Montserrat', sans-serif
+    margin: 0 auto
     color: #fff
     h1
         padding-top: 281px
@@ -109,13 +147,14 @@
     h2
         padding-top: 24px
         font-size: 18px 
+        font-weight: regular
         text-align: center
 
 #logo    
     float: left
     padding-top: 58px
-    font-family: bold 'Montserrat', sans-serif
     font-size: 28px
+    font-weight: bold
 #nav
     padding-top: 58px 
     ul
@@ -126,8 +165,8 @@
             padding: 16px
             border-radius: 5px
             a                
-                font-family: bold 'Montserrat', sans-serif
                 font-size: 14px
+                font-weight: bold
                 color: #fff         
         li:hover
             background: #21a5c1
@@ -140,7 +179,6 @@
             a
                 padding: 16px 0 
                 width: 100%
-                font-family: bold 'Montserrat', sans-serif
                 font-size: 12px
                 color: #222
         ul > li
@@ -179,7 +217,6 @@
         color: #fff
         float: left
         padding: 5px
-        font-family: bold 'Montserrat', sans-serif
         font-size: 12px
     img
         padding: 5px
@@ -205,23 +242,22 @@
 #portfolio
     height: 900px 
     text-align: center
-    background: #fbfbfb 
+    background: #FBFBFB 
     h3
         padding-top: 108px
         margin: 0 auto
         font-size: 16px
-        font-family: bold 'Montserrat', sans-serif
         color: #595959
         content: ""  
         width: 95px
-        padding-bottom: 15px   
-        border-bottom: 4px solid #ccc
+        padding-bottom: 10px   
+        border-bottom: 3px solid #ccc
     
 .portfolio_1
     max-width: 960px
     max-height: 450px
     margin: 0 auto
-    padding-top: 70px    
+    padding-top: 60px    
     display: flex
     flex-direction: column
     flex-wrap: wrap     
@@ -242,15 +278,322 @@
 
 .browse_portf    
     width: 217px    
-    margin-top: 30px
-    padding: 20px    
+    margin-top: 25px
+    padding: 15px
+    background: #FBFBFB    
     border: 2px solid #5EC2E7
     border-radius: 5px
-    font-family: bold 'Montserrat', sans-serif
-    font-size: 16px
+    font-size: 12px
+    font-weight: bold
     color: #5EC2E7
 
+#skills
+    width: 100%
+    height: 755px
+    background: #F5F5F5
+    display: block
+    text-align: center
 
+    h3
+        padding-top: 108px
+        margin: 0 auto
+        font-size: 16px
+        color: #595959
+        content: ""  
+        width: 85px
+        padding-bottom: 15px   
+        border-bottom: 3px solid #ccc
+    p
+        width: 823px
+        margin: 0 auto
+        padding-top: 68px            
+        font-family: 'Open Sans', sans-serif
+        font-size: 16px
+        color: #595959    
+.skills_img
+    display: flex
+    flex-direction: row
+    justify-content: center
+    margin-top: 102px
+    img
+        margin: 14px
+
+
+
+
+#experience
+    display: flex
+    flex-direction: row
+    justify-content: center
+    width: 100%
+    height: 910px
+    background: #FBFBFB 
+    img
+
+#img_expernc
+    max-height: 680px
+    margin-top: 134px
     
+.work_experience
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+    max-width: 550px
+    margin-right: 32px
+    h3
+        font-size: 28px
+    p
+        margin-top: 63px
+        font-family: 'Open Sans', sans-serif
+        font-size: 16px 
+        color: #999999 
+    button
+        width: 217px    
+        margin-top: 38px
+        padding: 15px
+        background: #FBFBFB    
+        border: 2px solid #5EC2E7
+        border-radius: 5px
+        font-size: 14px
+        color: #5EC2E7  
+
+.experience_deckript
+    display: flex
+    flex-direction: column
+    justify-content: center
+    max-width: 550px
+    margin-top: 147px
     
+.experiens_block
+    display: inline-block
+    h3
+        // padding-top: 15px            
+        font-weight: bold
+        font-size: 18px
+        color: #333333
+    h4
+        padding-top: 15px            
+        font-weight: regular 
+        font-size: 14px
+        color: #666666
+    p
+        padding-top: 18px            
+        font-weight: regular 
+        font-size: 13px
+        color: #999999      
+    img
+        float: left
+        padding: 0 27px 90px 20px
+
+
+#contact
+    width: 100%
+    height: 810px
+    background: #FBFBFB
+    font-size: 16px
+    font-weight: bold
+    color: black
+    h3
+        padding-top: 98px
+        margin: 0 auto
+        font-size: 16px
+        color: #595959
+        content: ""  
+        width: 75px
+        padding-bottom: 15px   
+        border-bottom: 3px solid #ccc
+    form
+        width: 650px
+        float: left 
+        // margin-left: 200px
+        margin-top: 95px
+
+    input
+        display: block
+        width: 303px
+        padding: 18px 0 18px 54px
+        margin: 8px 10px 18px 10px
+        float: left
+        border: 2px solid #ccc
+        border-radius: 8px
+        color: #222
+            
+    input:hover
+        border: 2px solid #88D3FF
+        border-radius: 8px
+    
+    select
+        width: 627px
+        padding: 18px
+        margin: 0 10px
+        color: #ccc
+        border: 2px solid #ccc
+        border-radius: 8px
+        option
+            padding: 15px
+            border: 2px solid #ccc
+            border-radius: 8px
+    select:hover
+        border: 2px solid #88D3FF
+        border-radius: 8px
+    textarea
+        width: 627px
+        height: 140px
+        padding: 15px
+        margin: 0 10px
+        border: 2px solid #ccc
+        border-radius: 8px    
+    textarea:hover
+        border: 2px solid #88D3FF
+        border-radius: 8px 
+
+    button
+        width: 138px
+        height: 50px
+        margin: 24px 0 0 496px
+        border: 0
+        font-size: 16px
+        right: 10px
+        color: #fff
+        cursor: pointer 
+        background: #FD685B
+        border-radius: 3px
+#full_name
+    background: url(../img/full_name.png) no-repeat
+    background-position: 6px
+#Email
+    top: 40px
+    background: url(../img/email.png) no-repeat 
+    background-position: 6px
+#contact_side
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    padding: 103px 0 0 83px
+    h4
+        font-weight: bold
+        font-size: 13px
+        color: #ccc    
+    p
+        font-family: 'Open Sans', sans-serif
+        font-weight: regular
+        font-size: 13px 
+        color: #999999 
+#i_social
+    margin: 67px 0 0 0
+    max-width: 160px
+    h2
+        padding: 8px 0
+        text-align: left
+        font-size: 13px 
+        color: #999999
+    a
+        display: block
+        max-width: 40px
+        border-radius: 50%
+        span
+            float: left
+            margin-right: 20px
+        h4
+            padding: 12px 20px 
+.icon-fb
+    margin: 15px 0
+    span
+        padding: 10px 18px
+        background: url(../img/facebook-letter.png) no-repeat
         
+.icon-tw
+    margin: 15px 0
+    span
+        padding: 10px 18px
+        background: url(../img/google-icon.png) no-repeat
+.icon-lin
+    margin: 15px 0
+    span
+        padding: 10px 18px
+        background: url(../img/link-icon.png) no-repeat
+.icon-google
+    margin: 15px 0
+    span
+        padding: 10px 18px
+        background: url(../img/tweeter-icon.png) no-repeat
+.icon-rss
+    margin: 15px 0
+    span
+        padding: 10px 18px
+        background: url(../img/rss-icon.png) no-repeat
+#map
+    iframe
+        width: 100%
+        height: 347px
+#footer   
+    width: 100%
+    height: 290px
+    background: #363842
+.footer_content
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    
+    div
+        display: flex
+        flex-direction: column
+        height: 185px
+        // width: 350px
+        margin: 52px 0
+        h2
+            padding-bottom: 43px
+            text-align: left
+            font-size: 16px
+            font-weight: bold
+            color: #fff
+        a
+            font-size: 12px
+            line-height: 1.8
+            color: #999999
+            
+        p
+            font-size: 14px
+            color: #999999
+
+#tviter_button    
+    margin-top: 30px
+    float: left       
+             
+    span             
+        padding: 25px 
+        
+        // top: 20px         
+        background: url(../img/twitter-logo1.png) no-repeat
+        border-radius: 50% 
+                        
+    span:hover 
+        padding: 25px
+        background: url(../img/twitter-logo2.png) no-repeat  
+#fb_button    
+    margin: -25px 0 0 60px
+    float: right       
+             
+    span             
+        padding: 18px
+        height: 30px 
+        
+        // top: 20px         
+        background: url(../img/facebook-footer1.png) no-repeat
+        border-radius: 50% 
+                        
+    span:hover 
+        padding: 18px
+        background: url(../img/facebook-footer2.png) no-repeat 
+
+
+//Adaptive________________________________________________________________________
+
+@include max-screen(1024)
+    .slick-prev    
+        left: 1%
+        top: 45%
+    .slick-next    
+        right: 1%
+        top: 45%  

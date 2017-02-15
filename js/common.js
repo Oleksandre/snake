@@ -20,10 +20,23 @@ $(document).ready(function(){
 	$('.block_slide').slick({
 		autoplay: true,
 		autoplaySpeed: 1000,
-		speed: 2000,
+		speed: 3000,
+		arrows: false,
+		// centerMode: true,
+		// centerPadding: '200px',
+		// slidesToShow: 1
+		// dots: true
+	});
+});
+
+$(document).ready(function(){
+	$('.block_slide_2').slick({
+		autoplay: true,
+		autoplaySpeed: 1000,
+		speed: 3000,
 		arrows: false,
 		centerMode: false,
 		// centerPadding: '0px',
-		// dots: true
+		dots: true
 	});
 });
