@@ -24,8 +24,8 @@ $(document).ready(function(){
 		arrows: false,
 		// centerMode: true,
 		// centerPadding: '200px',
-		// slidesToShow: 1
-		// dots: true
+		// slidesToShow: 3
+		dots: true
 	});
 });
 
