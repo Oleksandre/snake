@@ -49,7 +49,7 @@
     width: 100%
     display: block
     padding: 93px 0      
-    background: #eee   
+    background: #F4F4F4   
     color: #525252
     .slick-dots
         top: 317px
@@ -76,6 +76,8 @@
         background-color: #666666
 .block_info
     display: block 
+.UI_UX
+    position: relative
 .text_UX
     position: relative
     left: 50%
@@ -275,9 +277,8 @@
 
 // Portfolio_content_style     
 #portfolio
-    // height: 900px 
     text-align: center
-    background: #FBFBFB 
+    background: #ffffff 
     h3
         padding-top: 108px
         margin: 0 auto
@@ -304,7 +305,7 @@
     flex-wrap: wrap
     
 .img_big
-    flex-grow: 1
+    flex-grow: 
     margin: 10px
 
 .img_small
@@ -448,12 +449,12 @@
     input
         display: block
         width: 303px
-        padding: 18px 0 18px 54px
+        height: 54px
         margin: 8px 20px 18px 0px
         float: left
         border: 2px solid #ccc
         border-radius: 8px
-        color: #222
+        color: #ccc
             
     input:hover
         border: 2px solid #88D3FF
@@ -461,23 +462,23 @@
     
     select
         width: 627px
-        padding: 18px
+        height: 54px
         margin: 0 10px 0  0
         color: #ccc
         border: 2px solid #ccc
         border-radius: 8px
         option
-            padding: 15px
             border: 2px solid #ccc
-            border-radius: 8px
-    select:hover
+            border-radius: 8px 
+
+    select:hover, select:active
         border: 2px solid #88D3FF
         border-radius: 8px
     textarea
         width: 627px
         height: 140px
-        padding: 15px
         margin: 0 10px 0 0
+        color: #ccc
         border: 2px solid #ccc
         border-radius: 8px    
     textarea:hover
@@ -496,10 +497,11 @@
         background: #FD685B
         border-radius: 3px
 #full_name
+    padding: 0 40px
     background: url(../img/full_name.png) no-repeat
     background-position: 6px
 #Email
-    top: 40px
+    padding: 0 40px
     background: url(../img/email.png) no-repeat 
     background-position: 6px
 #contact_side
@@ -517,46 +519,63 @@
         font-size: 13px 
         color: #999999 
 #i_social
-    margin: 67px 0 0 0
-    max-width: 160px
+    margin: 67px 0 20px 0
+    max-width: 220px
     h2
         padding: 8px 0
         text-align: left
         font-size: 13px 
         color: #999999
-    a
-        display: block
-        max-width: 40px
-        border-radius: 50%
-        span
-            float: left
-            margin-right: 20px
-        h4
-            padding: 12px 20px 
+    span
+
 .icon-fb
     margin: 15px 0
+    padding: 10px 0
+    a
+        float: left
+        border-radius: 50%
     span
+        
+        margin-right: 20px
         padding: 10px 18px
         background: url(../img/facebook-letter.png) no-repeat
-        
+    h4
+        // padding: 12px 20px   
 .icon-tw
     margin: 15px 0
+    padding: 10px 0
+    a
+        float: left
+        border-radius: 50%
     span
+        margin-right: 20px;
         padding: 10px 18px
         background: url(../img/google-icon.png) no-repeat
 .icon-lin
     margin: 15px 0
+    padding: 10px 0
+    a
+        float: left
     span
+        margin-right: 20px
         padding: 10px 18px
         background: url(../img/link-icon.png) no-repeat
 .icon-google
     margin: 15px 0
+    padding: 10px 0
+    a
+        float: left
     span
+        margin-right: 20px
         padding: 10px 18px
         background: url(../img/tweeter-icon.png) no-repeat
 .icon-rss
     margin: 15px 0
+    padding: 10px 0
+    a
+        float: left
     span
+        margin-right: 20px
         padding: 10px 18px
         background: url(../img/rss-icon.png) no-repeat
 #map
