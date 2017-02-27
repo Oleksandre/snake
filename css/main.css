@@ -580,14 +580,14 @@ a {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   width: 600px;
-  max-height: 590px;
+  max-height: 730px;
   margin-top: 170px;
   margin-bottom: 150px;
   border-left: 2px solid #ccc; }
 
 .experiens_block {
   display: inline-block;
-  padding: 45px 15px; }
+  padding: 10px 15px; }
   .experiens_block span {
     background: url(../img/cickle.png) no-repeat;
     float: left;
@@ -625,7 +625,7 @@ a {
   padding-top: 65px; }
 
 .thirs_experiens {
-  padding-top: 85px; }
+  padding-top: 50px; }
 
 #contact {
   width: 100%;
