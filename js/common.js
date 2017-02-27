@@ -1,7 +1,4 @@
-$(function() {
 
-	
-})
 
 $(document).ready(function(){
 	$('.slider').slick({
@@ -14,24 +11,18 @@ $(document).ready(function(){
 		// centerPadding: '0px',
 		// dots: true
 	});
-});
-
-$(document).ready(function(){
 	$('.block_slide').slick({
-		autoplay: true,
-		autoplaySpeed: 1000,
-		speed: 3000,
+		// autoplay: true,
+		autoplaySpeed: 3000,
+		speed: 1000,
 		arrows: false,
 		// centerMode: true,
 		// centerPadding: '200px',
 		// slidesToShow: 3
 		dots: true
 	});
-});
-
-$(document).ready(function(){
 	$('.block_slide_2').slick({
-		autoplay: true,
+		// autoplay: true,
 		autoplaySpeed: 1000,
 		speed: 3000,
 		arrows: false,
@@ -40,3 +31,4 @@ $(document).ready(function(){
 		dots: true
 	});
 });
+
