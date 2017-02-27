@@ -884,6 +884,18 @@ a {
     padding: 18px;
     background: url(../img/facebook-footer2.png) no-repeat; }
 
+@media only screen and (max-width: 1550px) {
+  .slick-prev {
+    left: 2%; }
+  .slick-next {
+    right: 5%; } }
+
+@media only screen and (max-width: 1024px) {
+  .slick-prev {
+    left: 1%; }
+  .slick-next {
+    right: 1%; } }
+
 @media only screen and (max-width: 680px) {
   .slider {
     width: 100%;
@@ -1024,17 +1036,17 @@ a {
     display: inline-block; }
     .experiens_block h3 {
       font-weight: bold;
-      font-size: 18px;
+      font-size: 16px;
       color: #333333; }
     .experiens_block h4 {
       padding-top: 15px;
       font-weight: regular;
-      font-size: 13px;
+      font-size: 10px;
       color: #666666; }
     .experiens_block p {
       padding-top: 18px;
       font-weight: regular;
-      font-size: 13px;
+      font-size: 9px;
       color: #999999; }
     .experiens_block img {
       float: left;
@@ -1049,11 +1061,10 @@ a {
     .block_slide_2 h3 {
       padding-top: 24px;
       font-size: 12px; }
-  .slick-dots {
-    top: 160px; }
+    .block_slide_2 .slick-dots {
+      top: 160px; }
   #contact {
     width: 100%;
-    height: 600px;
     font-size: 16px; }
     #contact h3 {
       padding-top: 40px;
@@ -1070,83 +1081,89 @@ a {
     #contact input {
       display: block;
       width: 140px;
-      height: 40px; }
+      height: 40px;
+      margin-top: 20px; }
     #contact select {
       width: 300px;
-      height: 40px; }
+      height: 40px;
+      margin-top: 20px; }
     #contact textarea {
       width: 300px;
-      height: 120px; }
+      height: 120px;
+      margin-top: 20px; }
     #contact button {
       width: 120px;
       height: 40px;
-      margin: 24px 0 0 180px; }
-  #contact_side {
-    padding: 50px 0 0 83px; }
-    #contact_side h4 {
-      font-size: 13px;
-      color: #ccc; }
-    #contact_side p {
-      font-size: 13px; }
-  #i_social {
-    margin: 20px 0 20px 0;
-    max-width: 220px; }
-    #i_social h2 {
-      padding: 8px 0;
-      font-size: 33px;
-      color: #ccc; }
-  .icon-fb {
-    margin: 10px 0;
-    padding: 10px 0; }
-    .icon-fb span {
-      margin-right: 20px;
-      padding: 10px 18px;
-      background: url(../img/facebook-letter.png) no-repeat;
-      opacity: 0.5; }
-    .icon-fb span:hover {
-      opacity: 1; }
-  .icon-tw {
-    margin: 10px 0;
-    padding: 10px 0; }
-    .icon-tw span {
-      margin-right: 20px;
-      padding: 10px 18px;
-      background: url(../img/google-icon.png) no-repeat;
-      opacity: 0.3; }
-    .icon-tw span:hover {
-      opacity: 1; }
-    .icon-tw span:hover h4 {
-      color: #000; }
-  .icon-lin {
-    margin: 10px 0;
-    padding: 10px 0; }
-    .icon-lin span {
-      margin-right: 20px;
-      padding: 10px 18px;
-      background: url(../img/link-icon.png) no-repeat;
-      opacity: 0.5; }
-    .icon-lin span:hover {
-      opacity: 1; }
-  .icon-google {
-    margin: 10px 0;
-    padding: 10px 0; }
-    .icon-google span {
-      margin-right: 20px;
-      padding: 10px 18px;
-      background: url(../img/tweeter-icon.png) no-repeat;
-      opacity: 0.5; }
-    .icon-google span:hover {
-      opacity: 1; }
-  .icon-rss {
-    margin: 10px 0;
-    padding: 10px 0; }
-    .icon-rss span {
-      margin-right: 20px;
-      padding: 10px 18px;
-      background: url(../img/rss-icon.png) no-repeat;
-      opacity: 0.5; }
-    .icon-rss span:hover {
-      opacity: 1; }
+      margin: 30px 0 0 180px; }
+    #contact #contact_side {
+      display: block;
+      padding: 20px 0 0 83px; }
+      #contact #contact_side h3 {
+        margin: 0 0 10px 30px;
+        font-weight: bold;
+        font-size: 10px; }
+      #contact #contact_side p {
+        margin-left: 30px;
+        font-size: 13px; }
+      #contact #contact_side #location {
+        margin: 0  20px 0 300px; }
+      #contact #contact_side #i_social {
+        margin: 0px 0px 20px 300px;
+        max-width: 240px; }
+        #contact #contact_side #i_social a h4 {
+          margin: 0 0 0 20px;
+          padding: 9px 0;
+          font-size: 13px;
+          color: #ccc; }
+        #contact #contact_side #i_social a:hover h4 {
+          color: #333; }
+        #contact #contact_side #i_social a:hover span {
+          opacity: 1; }
+        #contact #contact_side #i_social .icon-fb {
+          margin: 0;
+          padding: 10px 30px 0px 30px;
+          max-height: 52px; }
+          #contact #contact_side #i_social .icon-fb span {
+            float: left;
+            padding: 10px 30px;
+            background: url(../img/facebook-letter.png) no-repeat;
+            opacity: 0.5; }
+        #contact #contact_side #i_social .icon-tw {
+          margin: 0;
+          padding: 10px 30px;
+          max-height: 52px; }
+          #contact #contact_side #i_social .icon-tw span {
+            float: left;
+            padding: 10px 30px;
+            background: url(../img/google-icon.png) no-repeat;
+            opacity: 0.3; }
+        #contact #contact_side #i_social .icon-lin {
+          margin: 0;
+          padding: 10px 30px;
+          max-height: 52px; }
+          #contact #contact_side #i_social .icon-lin span {
+            float: left;
+            padding: 10px 30px;
+            background: url(../img/link-icon.png) no-repeat;
+            opacity: 0.3; }
+        #contact #contact_side #i_social .icon-google {
+          margin: 0;
+          padding: 10px 30px;
+          max-height: 52px; }
+          #contact #contact_side #i_social .icon-google span {
+            float: left;
+            padding: 10px 30px;
+            background: url(../img/tweeter-icon.png) no-repeat;
+            opacity: 0.3; }
+        #contact #contact_side #i_social .icon-rss {
+          margin: 0;
+          padding: 10px 30px;
+          max-height: 52px; }
+          #contact #contact_side #i_social .icon-rss span {
+            float: left;
+            padding: 10px 30px;
+            background: url(../img/rss-icon.png) no-repeat;
+            opacity: 0.3; }
   #map iframe {
     height: 150px; }
   #footer {
