@@ -23,12 +23,15 @@ $(document).ready(function(){
 	});
 	$('.block_slide_2').slick({
 		// autoplay: true,
-		autoplaySpeed: 1000,
-		speed: 3000,
+		autoplaySpeed: 3000,
+		speed: 1000,
 		arrows: false,
 		centerMode: false,
 		// centerPadding: '0px',
 		dots: true
+	});
+	$("#menu_button").click(function() {
+		$(this).next().slideToggle();
 	});
 });
 

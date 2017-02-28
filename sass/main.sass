@@ -176,6 +176,7 @@
         padding-top: 300px
         font-size: 60px 
         text-align: center
+        text-transform: uppercase
     h2
         padding-top: 14px
         font-size: 18px 
@@ -235,8 +236,6 @@
             border-radius: 5px 5px 0 0
         ul > li:last-child
             border-radius: 0 0 5px 5px
-            // a
-            //     color: red
         li:hover .nav_drop
             display: block     
 .active
@@ -250,13 +249,10 @@
     ul
     display: none
     position: absolute
-    // font-weight: regular
     top: 46px    
     width: 149px
     li
-        // font-weight: regular
-        // font-size: 8px 
-.redmore
+.read_now
     display: inline-block
     float: left
     margin-top: 25px
@@ -374,14 +370,7 @@
     flex-direction: row
     justify-content: center
     width: 100%
-    background: #FBFBFB 
-    img
-
-
-#img_expernc
-    max-height: 680px
-    margin: 148px 0 125px 0
-    
+    background: #FBFBFB
 .work_experience
 
     display: flex
@@ -459,7 +448,8 @@
 .last_experiens
 .thirs_experiens
     padding-top: 50px
-   
+    h2
+            margin: -70px 0px 0 -40px
 #contact
     width: 100%
     height: 810px
@@ -485,7 +475,10 @@
         display: block
         width: 303px
         height: 54px
-        padding-left: 40px
+        cursor: pointer
+        font-family: 'Open Sans', sans-serif
+        font-weight: bold
+        padding-left: 60px
         margin: 8px 20px 18px 0px
         float: left
         border: 2px solid #ccc
@@ -496,13 +489,25 @@
     input:hover, input:active
         border: 2px solid #88D3FF
         border-radius: 8px
-        color: #333
+        color: #000
+        font-weight: bold
     select
         width: 627px
         height: 54px
         margin: 0 10px 0  0
         padding: 0 30px
         color: #999
+        font-family: 'Open Sans', sans-serif
+        font-weight: bold
+        cursor: pointer
+        -webkit-appearance: none 
+        -moz-appearance: none 
+        -ms-appearance: none 
+        -o-appearance: none
+        appearance: none
+        background: url(../img/select_arow.png) no-repeat  right 
+        background-position: 600px
+        line-height: 1em
         border: 2px solid #ccc
         border-radius: 8px
         option
@@ -513,17 +518,26 @@
         border: 2px solid #88D3FF
         border-radius: 8px
         color: #333
+        font-weight: bold
     textarea
         width: 627px
         height: 140px
         margin: 0 10px 0 0
         padding: 0 30px
         color: #999
+        font-size: 13px
+        font-family: 'Open Sans', sans-serif
+        font-weight: bold
+        cursor: pointer
         border: 2px solid #ccc
         border-radius: 8px    
     textarea:hover, textarea:active
         border: 2px solid #88D3FF
         border-radius: 8px 
+        -webkit-color: #333 
+        -moz-color: #333 
+        -ms-color: #333 
+        -o-color: #333 
         color: #333
     button
         width: 138px
@@ -541,16 +555,12 @@
     button:hover
         opacity: 1
 #full_name
-    padding: 0 40px
-    color: #ccc
-    background: url(../img/full_name.png) no-repeat
-    // background: #fff
-    background-position: 10px 
+    color: #000
+    background: url(../img/full_name.png) no-repeat 20px center
+#full_name:hover
+    color:  #000
 #Email
-    padding: 0 40px
-    background: url(../img/email.png) no-repeat
-    // background: #fff 
-    background-position: 6px
+    background: url(../img/email.png) no-repeat 20px center
 #contact_side
     display: block
     padding: 103px 0 0 83px
@@ -589,6 +599,7 @@
     span
         float: left
         padding: 10px 30px
+
         background: url(../img/facebook-letter.png) no-repeat
         opacity: 0.5
     
@@ -635,7 +646,6 @@
         height: 345px
 #footer   
     width: 100%
-    height: 290px
     background: #363842
 .footer_content
     display: flex
@@ -679,8 +689,7 @@
                         
     span:hover 
         padding: 25px 25px
-        background: url(../img/twitter-logo2.png) no-repeat 
-        border: 2px solid #009CD7 
+        background: url(../img/twitter-logo3.png) no-repeat 
 #fb_button    
     margin: -25px 0 0 60px
     float: right       
@@ -703,17 +712,7 @@
     .slick-next    
         right: 5% 
 
-@include max-screen(1024px) 
-    .slick-prev    
-        left: 1%
-    .slick-next    
-        right: 1% 
-
-    
-
-
-
-@include max-screen(680px)
+@include max-screen(1024px)
     .slider
         width: 100%
         height: 550px
@@ -734,13 +733,9 @@
     .center
         width: 650px
         margin: 0 auto
-    #menu_button
-        display: block
-        margin-right: 20px
-        float: right
     #nav
-        ul
-            display: none
+        ul li a
+            font-size: 12px
     .slick-prev    
         left: 2%
     .slick-next    
@@ -754,9 +749,9 @@
             font-size: 14px 
     #logo
         padding-top: 58px
-        font-size: 28px
+        font-size: 24px
         margin-left: 20px
-    .redmore
+    .read_now
         margin: 55px 20px
         width: 115px
         padding: 5px
@@ -840,19 +835,13 @@
             max-width: 120px
             max-height: 120px
     //experience___________________________________
-
-    #experience
-        img
-    #img_expernc
-        max-height: 680px
-        margin: 148px 0 125px 0
         
     .work_experience
         max-width: 550px
         margin-right: 32px
         h3
             font-size: 20px
-            margin-top: 42px
+            margin-top: 0px
         p
             margin-top: 47px
             font-size: 13px
@@ -863,28 +852,31 @@
             font-size: 13px
     .experience_deckript
         max-width: 400px
-        margin-top: 147px
+        margin-top: 80px
         
     .experiens_block
-        display: inline-block
-        h3
-            // padding-top: 15px            
-            font-weight: bold
+        h3 
             font-size: 16px
-            color: #333333
         h4
-            padding-top: 15px            
+            padding-top: 10px            
             font-weight: regular 
             font-size: 10px
             color: #666666
         p
-            padding-top: 18px            
+            padding-top: 10px            
             font-weight: regular 
             font-size: 9px
             color: #999999      
         img
             float: left
-            padding: 0 27px 90px 20px
+            padding: 0 27px 40px 20px
+    .first_experiens
+        h2
+            margin: -73px 0 0 -40px     
+    .thirs_experiens
+        padding-top: 10px
+        h2
+            margin: -40px 0px 0 -40px
     //Slider_block_slide_2___________________________
     .block_slide_2
         width: 100%
@@ -921,14 +913,17 @@
             width: 140px
             height: 40px
             margin-top: 20px
+            font-size: 10px
         select
             width: 300px
             height: 40px
             margin-top: 20px
+            font-size: 10px
         textarea
             width: 300px
             height: 120px
             margin-top: 20px
+            font-size: 10px
         button
             width: 120px
             height: 40px
@@ -943,7 +938,7 @@
                 font-size: 10px
             p
                 margin-left: 30px
-                font-size: 13px
+                font-size: 10px
             #location
                 margin: 0  20px 0 300px
             #i_social
@@ -1007,11 +1002,13 @@
                         padding: 10px 30px
                         background: url(../img/rss-icon.png) no-repeat
                         opacity: 0.3
+    
     #map
+        max-height: 200px
         iframe
-            height: 150px        
+            width: 100%
+            height: 200px        
     #footer
-        height: 200px
     .footer_content
         div
             display: flex
@@ -1036,3 +1033,260 @@
         margin: -25px 0 0 60px
         span             
             padding: 18px
+
+
+
+//________________________________________________________________________
+@include max-screen(680px)
+    .slider
+        display: none
+    .content_header
+        position: relative
+        background: #37cedc
+    .center
+        width: 360px
+        margin: 0 auto
+
+    #menu_button
+        display: block
+        margin-right: 20px
+        float: right
+    #nav
+        ul
+            display: none
+            li
+                display: block
+                padding: 5px
+    #nav
+        ul li a
+            font-size: 12px
+    
+    .center
+        h1
+            padding-top: 150px
+            font-size: 25px
+        h2
+            padding-top: 14px
+            font-size: 11px 
+    .active     
+        border-bottom: 0
+    #logo
+        padding-top: 58px
+        font-size: 24px
+        margin-left: 20px
+    .read_now
+        display: none
+    #viewmore    
+        padding: 50px
+    // Slider_kontent_style____________________________   
+    .block_slide
+        padding: 20px 0 
+        .slick-dots
+            top: 110px
+        .slick-dots li
+            width: 10px
+            height: 10px
+        .slick-dots li button
+            width: 10px
+            height: 10px
+            margin: 5px
+        .slick-dots li button:before 
+            font-family: 'slick'
+            font-size: 43px
+            line-height: 17px
+        .slick-dots li.slick-active button
+            width: 10px
+            height: 10px 
+        .slick-dots li.slick-active button:before
+            width: 10px
+            height: 10px
+            line-height: 17px
+    .text_UX
+        h3
+            margin-left: -50px
+            font-size: 12px
+        p
+            padding-top: 15px
+            max-width: 200px
+            margin-left: -50px
+            font-size: 10px
+    .img_UI
+        position: relative
+        max-width: 60px
+        max-height: 60px
+        margin-left:  -160px
+    .img_UX
+        position: absolute
+        max-width: 60px
+        max-height: 60px
+        margin-left: -120px
+    // Portfolio_content_style     
+    #portfolio
+        text-align: center
+        h3
+            padding-top: 30px
+            margin: 0 auto
+            font-size: 12px
+            content: ""  
+            width: 85px
+            padding-bottom: 7px   
+            border-bottom: 2px solid #ccc
+    .portfolio_1
+        max-width: 320px
+        padding: 30px 0
+        margin: 0 auto
+    .img_big
+         margin: 0 auto 
+
+    .img_small
+        display: none
+
+    .browse_portf    
+        width: 140px    
+        margin: 20px 0 30px 0
+        padding: 10px
+        font-size: 10px
+    //skills
+    #skills
+        display: block
+        text-align: center
+        h3
+            padding-top: 40px
+            margin: 0 auto
+            font-size: 12px
+            content: ""  
+            width: 75px
+            padding-bottom: 10px   
+            border-bottom: 2px solid #E0E0E0
+        p
+            width: 320px
+            margin: 0 auto
+            padding-top: 30px 
+            font-size: 10px  
+    .skills_img
+        padding: 30px 0 40px 0
+        img
+            margin: 10px
+            max-width: 60px
+            max-height: 60px
+    //experience___________________________________
+    #experience
+        display: block    
+    .work_experience
+        display: block
+        max-width: 360px
+        text-align: center
+        margin: 0 auto
+        h3
+            font-size: 16px
+            padding-top: 30px
+        p
+            margin-top: 30px
+            font-size: 10px
+        button
+            width: 120px    
+            margin-top: 30px
+            padding: 10px
+            font-size: 10px
+    .experience_deckript
+        max-width: 300px
+        height: 540px
+        margin: 0 auto
+        padding: 20px 0
+        
+    .experiens_block
+        h3 
+            font-size: 16px
+        h4
+            padding-top: 10px            
+            font-weight: regular 
+            font-size: 10px
+            color: #666666
+        p
+            padding-top: 10px            
+            font-weight: regular 
+            font-size: 9px
+            color: #999999      
+        img
+            float: left
+            padding: 0 27px 40px 20px
+    .first_experiens
+        h2
+            margin: -73px 0 0 -40px     
+    .thirs_experiens
+        padding-top: 10px
+        h2
+            margin: -40px 0px 0 -40px
+    //Slider_block_slide_2___________________________
+    .block_slide_2
+        width: 100%
+        padding: 20px 0 40px 0
+        p
+            font-size: 12px
+            max-width: 320px
+            margin: 0 auto
+        h3
+            padding-top: 16px
+            font-size: 10px
+        .slick-dots
+            top: 120px 
+    #contact
+        width: 100%
+        height: 600px
+        font-size: 16px
+        h2
+            padding-top: 30px
+            font-size: 14px
+            color: #333
+            content: ""  
+            width: 85px
+            padding-bottom: 10px   
+            border-bottom: 2px solid #ccc
+        form
+            width: 320px
+            float: none
+            margin-top: 30px
+        #contact_side
+            display: none
+    #map
+        max-height: 100px
+        iframe
+            height: 100px        
+    #footer   
+        width: 100%
+    .footer_content
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        max-width: 340px
+        
+        div
+            display: flex
+            flex-direction: column
+            height: 110px
+            // width: 350px
+            margin: 20px 0
+            h2
+                padding-bottom: 20px
+                text-align: left
+                font-size: 8px
+                font-weight: bold
+                color: #fff
+            a
+                font-size: 8px
+                line-height: 1.8
+                color: #545766
+                
+            p
+                font-size: 6px
+                color: #545766
+            a:hover
+                color: #ccc
+    #tviter_button
+        display: none
+    #fb_button
+        display: none 
+@include min-screen(685px) 
+    #nav
+        ul
+            display: block !important  
